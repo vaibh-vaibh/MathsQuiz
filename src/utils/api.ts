@@ -21,7 +21,7 @@ export async function fetchQuizData(): Promise<Quiz | null> {
     
     // Transform OpenTDB data format to our Quiz format
     const transformedQuiz: Quiz = {
-      id: 'opentdb-science-mathematics-quiz',
+      id: 'opentdb-mathematics-quiz',
       title: 'Science:Mathematics Quiz',
       description: 'Test your knowledge about science and mathematics with these challenging questions!',
       questions: data.results.map((question: any, index: number): QuizQuestion => {
